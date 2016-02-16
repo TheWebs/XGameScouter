@@ -1,0 +1,105 @@
+﻿<Controls:MetroWindow x:Class="XGameScouter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:XGameScouter"
+        mc:Ignorable="d"
+        Title="XLolScouter" Height="484.056" Width="1236" ResizeMode="CanMinimize">
+    <Grid>
+        <Grid x:Name="inicio" Margin="486,163,460,199" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" Text="Amatarasu001" VerticalAlignment="Top" Width="280" HorizontalContentAlignment="Center"/>
+            <Button x:Name="button" Content="Search" HorizontalAlignment="Left" Height="30" Margin="70,37,0,0" VerticalAlignment="Top" Width="140" Click="button_Click" Cursor="Hand"/>
+
+        </Grid>
+        <Grid x:Name="results" Margin="-5,0,-7,0" Visibility="Hidden">
+            <Grid HorizontalAlignment="Left" Height="455" VerticalAlignment="Top" Width="623" Background="#FFBD5F5F">
+                <Image x:Name="sum01icon" HorizontalAlignment="Left" Height="64" Margin="43,36,0,0" VerticalAlignment="Top" Width="64" Source="C:\Users\franc\Pictures\12469415_1043761865745561_7973426584487417461_o.jpg" Stretch="Fill"/>
+                <Image x:Name="sum02icon" HorizontalAlignment="Left" Height="64" Margin="43,118,0,0" VerticalAlignment="Top" Width="64" Source="C:\Users\franc\Pictures\12469415_1043761865745561_7973426584487417461_o.jpg" Stretch="Fill"/>
+                <Image x:Name="sum03icon" HorizontalAlignment="Left" Height="64" Margin="43,205,0,0" VerticalAlignment="Top" Width="64" Source="C:\Users\franc\Pictures\12469415_1043761865745561_7973426584487417461_o.jpg" Stretch="Fill"/>
+                <Image x:Name="sum04icon" HorizontalAlignment="Left" Height="64" Margin="43,292,0,0" VerticalAlignment="Top" Width="64" Source="C:\Users\franc\Pictures\12469415_1043761865745561_7973426584487417461_o.jpg" Stretch="Fill"/>
+                <Image x:Name="sum05icon" HorizontalAlignment="Left" Height="64" Margin="43,381,0,0" VerticalAlignment="Top" Width="64" Source="C:\Users\franc\Pictures\12469415_1043761865745561_7973426584487417461_o.jpg" Stretch="Fill"/>
+                <Label x:Name="label" Content="Icon" HorizontalAlignment="Left" Height="31" Margin="42,0,0,0" VerticalAlignment="Top" Width="64" HorizontalContentAlignment="Center" FontSize="16" FontFamily="Segoe UI Semibold"/>
+                <Rectangle Fill="White" HorizontalAlignment="Left" Height="440" Margin="112,10,0,0" Stroke="White" VerticalAlignment="Top" Width="4"/>
+                <Label x:Name="label_Copy" Content="Name" HorizontalAlignment="Left" Height="31" Margin="154,0,0,0" VerticalAlignment="Top" Width="64" HorizontalContentAlignment="Center" FontSize="16" FontFamily="Segoe UI Semibold"/>
+                <Rectangle Fill="White" HorizontalAlignment="Left" Height="440" Margin="256,10,0,0" Stroke="White" VerticalAlignment="Top" Width="4"/>
+                <Label x:Name="name1" Content="Label" HorizontalAlignment="Left" Height="26" Margin="116,56,0,0" VerticalAlignment="Top" Width="140" HorizontalContentAlignment="Center"/>
+                <Label x:Name="name2" Content="Label" HorizontalAlignment="Left" Height="26" Margin="116,143,0,0" VerticalAlignment="Top" Width="140" HorizontalContentAlignment="Center"/>
+                <Label x:Name="name3" Content="Label" HorizontalAlignment="Left" Height="26" Margin="116,227,0,0" VerticalAlignment="Top" Width="140" HorizontalContentAlignment="Center"/>
+                <Label x:Name="name4" Content="Label" HorizontalAlignment="Left" Height="26" Margin="116,314,0,0" VerticalAlignment="Top" Width="140" HorizontalContentAlignment="Center"/>
+                <Label x:Name="name5" Content="Label" HorizontalAlignment="Left" Height="26" Margin="116,401,0,0" VerticalAlignment="Top" Width="140" HorizontalContentAlignment="Center"/>
+                <Image x:Name="sum01champion" HorizontalAlignment="Left" Height="64" Margin="279,36,0,0" VerticalAlignment="Top" Width="64" Source="12469415_1043761865745561_7973426584487417461_o.jpg" Stretch="Fill"/>
+                <Image x:Name="sum02champion" HorizontalAlignment="Left" Height="64" Margin="279,118,0,0" VerticalAlignment="Top" Width="64" Source="12469415_1043761865745561_7973426584487417461_o1.jpg" Stretch="Fill"/>
+                <Image x:Name="sum03champion" HorizontalAlignment="Left" Height="64" Margin="279,205,0,0" VerticalAlignment="Top" Width="64" Source="12469415_1043761865745561_7973426584487417461_o2.jpg" Stretch="Fill"/>
+                <Image x:Name="sum04champion" HorizontalAlignment="Left" Height="64" Margin="279,292,0,0" VerticalAlignment="Top" Width="64" Source="12469415_1043761865745561_7973426584487417461_o3.jpg" Stretch="Fill"/>
+                <Image x:Name="sum05champion" HorizontalAlignment="Left" Height="64" Margin="279,381,0,0" VerticalAlignment="Top" Width="64" Source="12469415_1043761865745561_7973426584487417461_o4.jpg" Stretch="Fill"/>
+                <Label x:Name="label_Copy1" Content="Champion" HorizontalAlignment="Left" Height="31" Margin="265,0,0,0" VerticalAlignment="Top" Width="92" HorizontalContentAlignment="Center" FontSize="16" FontFamily="Segoe UI Semibold"/>
+                <Rectangle Fill="White" HorizontalAlignment="Left" Height="440" Margin="362,10,0,0" Stroke="White" VerticalAlignment="Top" Width="4"/>
+                <Image x:Name="sum01spell1" HorizontalAlignment="Left" Height="32" Margin="400,36,0,0" VerticalAlignment="Top" Width="32" Source="12469415_1043761865745561_7973426584487417461_o.jpg" Stretch="Fill"/>
+                <Image x:Name="sum02spell1" HorizontalAlignment="Left" Height="32" Margin="400,118,0,0" VerticalAlignment="Top" Width="32" Source="12469415_1043761865745561_7973426584487417461_o1.jpg" Stretch="Fill"/>
+                <Image x:Name="sum03spell1" HorizontalAlignment="Left" Height="32" Margin="400,205,0,0" VerticalAlignment="Top" Width="32" Source="12469415_1043761865745561_7973426584487417461_o2.jpg" Stretch="Fill"/>
+                <Image x:Name="sum04spell1" HorizontalAlignment="Left" Height="32" Margin="400,292,0,0" VerticalAlignment="Top" Width="32" Source="12469415_1043761865745561_7973426584487417461_o3.jpg" Stretch="Fill"/>
+                <Image x:Name="sum05spell1" HorizontalAlignment="Left" Height="32" Margin="400,381,0,0" VerticalAlignment="Top" Width="32" Source="12469415_1043761865745561_7973426584487417461_o4.jpg" Stretch="Fill"/>
+                <Label x:Name="label_Copy2" Content="Spells" HorizontalAlignment="Left" Height="31" Margin="371,0,0,0" VerticalAlignment="Top" Width="92" HorizontalContentAlignment="Center" FontSize="16" FontFamily="Segoe UI Semibold"/>
+                <Rectangle Fill="White" HorizontalAlignment="Left" Height="440" Margin="468,10,0,0" Stroke="White" VerticalAlignment="Top" Width="4"/>
+                <Image x:Name="sum01spell2" HorizontalAlignment="Left" Height="32" Margin="400,68,0,0" VerticalAlignment="Top" Width="32" Source="12469415_1043761865745561_7973426584487417461_o.jpg" Stretch="Fill"/>
+                <Image x:Name="sum02spell2" HorizontalAlignment="Left" Height="32" Margin="400,150,0,0" VerticalAlignment="Top" Width="32" Source="12469415_1043761865745561_7973426584487417461_o1.jpg" Stretch="Fill"/>
+                <Image x:Name="sum03spell2" HorizontalAlignment="Left" Height="32" Margin="400,237,0,0" VerticalAlignment="Top" Width="32" Source="12469415_1043761865745561_7973426584487417461_o2.jpg" Stretch="Fill"/>
+                <Image x:Name="sum04spell2" HorizontalAlignment="Left" Height="32" Margin="400,324,0,0" VerticalAlignment="Top" Width="32" Source="12469415_1043761865745561_7973426584487417461_o3.jpg" Stretch="Fill"/>
+                <Image x:Name="sum05spell2" HorizontalAlignment="Left" Height="32" Margin="400,413,0,0" VerticalAlignment="Top" Width="32" Source="12469415_1043761865745561_7973426584487417461_o4.jpg" Stretch="Fill"/>
+                <Image x:Name="sum01rank" HorizontalAlignment="Left" Height="64" Margin="491,36,0,0" VerticalAlignment="Top" Width="64" Source="12469415_1043761865745561_7973426584487417461_o.jpg" Stretch="Fill"/>
+                <Image x:Name="sum0rank" HorizontalAlignment="Left" Height="64" Margin="491,118,0,0" VerticalAlignment="Top" Width="64" Source="12469415_1043761865745561_7973426584487417461_o1.jpg" Stretch="Fill"/>
+                <Image x:Name="sum03rank" HorizontalAlignment="Left" Height="64" Margin="491,205,0,0" VerticalAlignment="Top" Width="64" Source="12469415_1043761865745561_7973426584487417461_o2.jpg" Stretch="Fill"/>
+                <Image x:Name="sum04rank" HorizontalAlignment="Left" Height="64" Margin="491,292,0,0" VerticalAlignment="Top" Width="64" Source="12469415_1043761865745561_7973426584487417461_o3.jpg" Stretch="Fill"/>
+                <Image x:Name="sum05rank" HorizontalAlignment="Left" Height="64" Margin="491,381,0,0" VerticalAlignment="Top" Width="64" Source="12469415_1043761865745561_7973426584487417461_o4.jpg" Stretch="Fill"/>
+                <Label x:Name="label_Copy3" Content="Rank" HorizontalAlignment="Left" Height="31" Margin="477,0,0,0" VerticalAlignment="Top" Width="92" HorizontalContentAlignment="Center" FontSize="16" FontFamily="Segoe UI Semibold"/>
+                <Rectangle Fill="White" HorizontalAlignment="Left" Height="440" Margin="574,10,0,0" Stroke="White" VerticalAlignment="Top" Width="4"/>
+            </Grid>
+            <Grid HorizontalAlignment="Left" Height="455" VerticalAlignment="Top" Width="623" Background="#FF5F8ABD" Margin="619,0,0,0">
+                <Image x:Name="sum06icon" HorizontalAlignment="Left" Height="64" Margin="43,36,0,0" VerticalAlignment="Top" Width="64" Source="12469415_1043761865745561_7973426584487417461_o5.jpg" Stretch="Fill"/>
+                <Image x:Name="sum07icon" HorizontalAlignment="Left" Height="64" Margin="43,118,0,0" VerticalAlignment="Top" Width="64" Source="12469415_1043761865745561_7973426584487417461_o6.jpg" Stretch="Fill"/>
+                <Image x:Name="sum08icon" HorizontalAlignment="Left" Height="64" Margin="43,205,0,0" VerticalAlignment="Top" Width="64" Source="12469415_1043761865745561_7973426584487417461_o7.jpg" Stretch="Fill"/>
+                <Image x:Name="sum09icon" HorizontalAlignment="Left" Height="64" Margin="43,292,0,0" VerticalAlignment="Top" Width="64" Source="12469415_1043761865745561_7973426584487417461_o8.jpg" Stretch="Fill"/>
+                <Image x:Name="sum10icon" HorizontalAlignment="Left" Height="64" Margin="43,381,0,0" VerticalAlignment="Top" Width="64" Source="12469415_1043761865745561_7973426584487417461_o9.jpg" Stretch="Fill"/>
+                <Label x:Name="label_Copy4" Content="Icon" HorizontalAlignment="Left" Height="31" Margin="42,0,0,0" VerticalAlignment="Top" Width="64" HorizontalContentAlignment="Center" FontSize="16" FontFamily="Segoe UI Semibold"/>
+                <Rectangle Fill="White" HorizontalAlignment="Left" Height="440" Margin="112,10,0,0" Stroke="White" VerticalAlignment="Top" Width="4"/>
+                <Label x:Name="label_Copy5" Content="Name" HorizontalAlignment="Left" Height="31" Margin="154,0,0,0" VerticalAlignment="Top" Width="64" HorizontalContentAlignment="Center" FontSize="16" FontFamily="Segoe UI Semibold"/>
+                <Rectangle Fill="White" HorizontalAlignment="Left" Height="440" Margin="256,10,0,0" Stroke="White" VerticalAlignment="Top" Width="4"/>
+                <Label x:Name="name6" Content="Label" HorizontalAlignment="Left" Height="26" Margin="116,56,0,0" VerticalAlignment="Top" Width="140" HorizontalContentAlignment="Center"/>
+                <Label x:Name="name7" Content="Label" HorizontalAlignment="Left" Height="26" Margin="116,143,0,0" VerticalAlignment="Top" Width="140" HorizontalContentAlignment="Center"/>
+                <Label x:Name="name8" Content="Label" HorizontalAlignment="Left" Height="26" Margin="116,227,0,0" VerticalAlignment="Top" Width="140" HorizontalContentAlignment="Center"/>
+                <Label x:Name="name9" Content="Label" HorizontalAlignment="Left" Height="26" Margin="116,314,0,0" VerticalAlignment="Top" Width="140" HorizontalContentAlignment="Center"/>
+                <Label x:Name="name10" Content="Label" HorizontalAlignment="Left" Height="26" Margin="116,401,0,0" VerticalAlignment="Top" Width="140" HorizontalContentAlignment="Center"/>
+                <Image x:Name="sum06champion" HorizontalAlignment="Left" Height="64" Margin="279,36,0,0" VerticalAlignment="Top" Width="64" Source="12469415_1043761865745561_7973426584487417461_o.jpg" Stretch="Fill"/>
+                <Image x:Name="sum07champion" HorizontalAlignment="Left" Height="64" Margin="279,118,0,0" VerticalAlignment="Top" Width="64" Source="12469415_1043761865745561_7973426584487417461_o1.jpg" Stretch="Fill"/>
+                <Image x:Name="sum08champion" HorizontalAlignment="Left" Height="64" Margin="279,205,0,0" VerticalAlignment="Top" Width="64" Source="12469415_1043761865745561_7973426584487417461_o2.jpg" Stretch="Fill"/>
+                <Image x:Name="sum09champion" HorizontalAlignment="Left" Height="64" Margin="279,292,0,0" VerticalAlignment="Top" Width="64" Source="12469415_1043761865745561_7973426584487417461_o3.jpg" Stretch="Fill"/>
+                <Image x:Name="sum10champion" HorizontalAlignment="Left" Height="64" Margin="279,381,0,0" VerticalAlignment="Top" Width="64" Source="12469415_1043761865745561_7973426584487417461_o4.jpg" Stretch="Fill"/>
+                <Label x:Name="label_Copy6" Content="Champion" HorizontalAlignment="Left" Height="31" Margin="265,0,0,0" VerticalAlignment="Top" Width="92" HorizontalContentAlignment="Center" FontSize="16" FontFamily="Segoe UI Semibold"/>
+                <Rectangle Fill="White" HorizontalAlignment="Left" Height="440" Margin="362,10,0,0" Stroke="White" VerticalAlignment="Top" Width="4"/>
+                <Image x:Name="sum06spell1" HorizontalAlignment="Left" Height="32" Margin="400,36,0,0" VerticalAlignment="Top" Width="32" Source="12469415_1043761865745561_7973426584487417461_o.jpg" Stretch="Fill"/>
+                <Image x:Name="sum07spell1" HorizontalAlignment="Left" Height="32" Margin="400,118,0,0" VerticalAlignment="Top" Width="32" Source="12469415_1043761865745561_7973426584487417461_o1.jpg" Stretch="Fill"/>
+                <Image x:Name="sum08spell1" HorizontalAlignment="Left" Height="32" Margin="400,205,0,0" VerticalAlignment="Top" Width="32" Source="12469415_1043761865745561_7973426584487417461_o2.jpg" Stretch="Fill"/>
+                <Image x:Name="sum09spell1" HorizontalAlignment="Left" Height="32" Margin="400,292,0,0" VerticalAlignment="Top" Width="32" Source="12469415_1043761865745561_7973426584487417461_o3.jpg" Stretch="Fill"/>
+                <Image x:Name="sum10spell1" HorizontalAlignment="Left" Height="32" Margin="400,381,0,0" VerticalAlignment="Top" Width="32" Source="12469415_1043761865745561_7973426584487417461_o4.jpg" Stretch="Fill"/>
+                <Label x:Name="label_Copy7" Content="Spells" HorizontalAlignment="Left" Height="31" Margin="371,0,0,0" VerticalAlignment="Top" Width="92" HorizontalContentAlignment="Center" FontSize="16" FontFamily="Segoe UI Semibold"/>
+                <Rectangle Fill="White" HorizontalAlignment="Left" Height="440" Margin="468,10,0,0" Stroke="White" VerticalAlignment="Top" Width="4"/>
+                <Image x:Name="sum06spell2" HorizontalAlignment="Left" Height="32" Margin="400,68,0,0" VerticalAlignment="Top" Width="32" Source="12469415_1043761865745561_7973426584487417461_o.jpg" Stretch="Fill"/>
+                <Image x:Name="sum07spell2" HorizontalAlignment="Left" Height="32" Margin="400,150,0,0" VerticalAlignment="Top" Width="32" Source="12469415_1043761865745561_7973426584487417461_o1.jpg" Stretch="Fill"/>
+                <Image x:Name="sum08spell2" HorizontalAlignment="Left" Height="32" Margin="400,237,0,0" VerticalAlignment="Top" Width="32" Source="12469415_1043761865745561_7973426584487417461_o2.jpg" Stretch="Fill"/>
+                <Image x:Name="sum09spell2" HorizontalAlignment="Left" Height="32" Margin="400,324,0,0" VerticalAlignment="Top" Width="32" Source="12469415_1043761865745561_7973426584487417461_o3.jpg" Stretch="Fill"/>
+                <Image x:Name="sum10spell2" HorizontalAlignment="Left" Height="32" Margin="400,413,0,0" VerticalAlignment="Top" Width="32" Source="12469415_1043761865745561_7973426584487417461_o4.jpg" Stretch="Fill"/>
+                <Image x:Name="sum06rank" HorizontalAlignment="Left" Height="64" Margin="491,36,0,0" VerticalAlignment="Top" Width="64" Source="12469415_1043761865745561_7973426584487417461_o.jpg" Stretch="Fill"/>
+                <Image x:Name="sum07rank" HorizontalAlignment="Left" Height="64" Margin="491,118,0,0" VerticalAlignment="Top" Width="64" Source="12469415_1043761865745561_7973426584487417461_o1.jpg" Stretch="Fill"/>
+                <Image x:Name="sum08rank" HorizontalAlignment="Left" Height="64" Margin="491,205,0,0" VerticalAlignment="Top" Width="64" Source="12469415_1043761865745561_7973426584487417461_o2.jpg" Stretch="Fill"/>
+                <Image x:Name="sum09rank" HorizontalAlignment="Left" Height="64" Margin="491,292,0,0" VerticalAlignment="Top" Width="64" Source="12469415_1043761865745561_7973426584487417461_o3.jpg" Stretch="Fill"/>
+                <Image x:Name="sum10rank" HorizontalAlignment="Left" Height="64" Margin="491,381,0,0" VerticalAlignment="Top" Width="64" Source="12469415_1043761865745561_7973426584487417461_o4.jpg" Stretch="Fill"/>
+                <Label x:Name="label_Copy8" Content="Rank" HorizontalAlignment="Left" Height="31" Margin="477,0,0,0" VerticalAlignment="Top" Width="92" HorizontalContentAlignment="Center" FontSize="16" FontFamily="Segoe UI Semibold"/>
+                <Rectangle Fill="White" HorizontalAlignment="Left" Height="440" Margin="574,10,0,0" Stroke="White" VerticalAlignment="Top" Width="4"/>
+            </Grid>
+
+        </Grid>
+
+    </Grid>
+</Controls:MetroWindow>
